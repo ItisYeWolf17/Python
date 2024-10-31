@@ -1,4 +1,4 @@
-import Persona
+from Persona import Persona
 
 class Nodo:
     
@@ -12,9 +12,10 @@ class Nodo:
     def set_dato(self, dato):
         self.__dato = dato
         
-    def get_nombre(self):
+    def get_next(self):
         return self.__next
     
-    def set_nombre(self, next):
+    def set_next(self, next):
         self.__next = next
         
+
