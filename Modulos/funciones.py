@@ -1,6 +1,6 @@
 import os
 
-def agregarProducto(ventas):
+def agregar_producto(ventas):
     temp = 0
     while temp != 1:
         nombre_producto = str(input("Ingrese el nombre del producto: "))
@@ -39,7 +39,7 @@ def agregarProducto(ventas):
     
     ventas.append(venta)  
     
-def mostrarProductos(ventas):
+def mostrar_productos(ventas):
     concat = "------------- Lista de Productos -------------\n" 
     for x in ventas:
         concat += "Nombre Producto: " + x['producto']
@@ -50,7 +50,7 @@ def mostrarProductos(ventas):
     print(concat)
     input("Presione enter para continuar....")
     
-def ingresosProductos(ventas):
+def ingresos_productos(ventas):
     concat = "------------- Ingresos por Productos -------------\n" 
     for x in ventas:
         concat += "Nombre Producto: " + x['producto']
@@ -60,7 +60,7 @@ def ingresosProductos(ventas):
     print(concat)
     input("Presione enter para continuar....")
     
-def ingresosTotales(ventas):
+def ingresos_totales(ventas):
     concat = "------------- Ingresos Totales -------------\n" 
     for x in ventas:
         ingresos = x['ventas'] * x['precio']
@@ -75,7 +75,7 @@ def ingresosTotales(ventas):
     input("Presione enter para continuar....")
     
     
-def productoMayorIngresos(ventas):
+def producto_mayor_Ingresos(ventas):
     mayor = -1
     producto = {}
     for x in ventas:
@@ -94,7 +94,7 @@ def productoMayorIngresos(ventas):
     input("Presione enter para continuar....")
     
     
-def limpiarConsola():
+def limpiar_consola():
     if os.name == 'nt': 
         os.system('cls')
     else:  

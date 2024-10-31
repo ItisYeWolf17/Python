@@ -12,7 +12,7 @@ ventas = [];
 menu = -1;
 
 while menu != 0:
-    funciones.limpiarConsola()
+    funciones.limpiar_consola()
     try:
         
         menu = int(input("Ingrese lo que desea hacer:\n\t1.Agregar Producto\n\t"+ 
@@ -22,15 +22,15 @@ while menu != 0:
         
         match menu:
             case 1:
-                funciones.agregarProducto(ventas)
+                funciones.agregar_producto(ventas)
             case 2:
-                funciones.mostrarProductos(ventas)
+                funciones.mostrar_productos(ventas)
             case 3:
-                funciones.ingresosProductos(ventas)
+                funciones.ingresos_productos(ventas)
             case 4:
-                funciones.ingresosTotales(ventas)
+                funciones.ingresos_totales(ventas)
             case 5:
-                funciones.productoMayorIngresos(ventas)
+                funciones.producto_mayor_Ingresos(ventas)
             case 0:
                 print("Gracias por usar...")
                 break
